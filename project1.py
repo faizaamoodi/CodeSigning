@@ -13,11 +13,11 @@ key = ECC.import_key(open('pubkey.der').read())
 h = SHA256.new(received_message)
 
 #generate the DSS verification using key
-verifier = DSS.new(key, 'fips-186-3')
+validator = DSS.new(key, 'fips-186-3')
 
 #function to match signatures
 try:
-    verifier.verify(h, signature)
-    print("The message is authentic.")
+    validator.verify(h, signature)
+    print("Code certificate valid: execution allowed")
 except ValueError:
-    print("The message is not authentic.")
+    print("Code certificate invalid: execution denied")
