@@ -1,0 +1,1 @@
+print("I am a software made by ame0244 & ____")

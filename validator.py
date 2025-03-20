@@ -3,10 +3,13 @@
 from Crypto.Hash import SHA256
 from Crypto.PublicKey import ECC
 from Crypto.Signature import DSS
+from product import signature
+
+#private key generation ?? 
 
 #function to receive public key + message
 
-#intialize key val and import public key thorugh file
+#intialize key val and import public key through file
 key = ECC.import_key(open('pubkey.der').read())
 
 #create new hash of message
