@@ -34,7 +34,7 @@ This project focuses on a study of code signing, which is a process that uses di
     ./validator
 ```
 
-3. \[Optional\] Testing after modification
+3. \[Optional\] Testing after modification:
 ```sh
     echo "MALICIOUS CODE MALICIOUS CODE" >> product.bin
     ./validator
