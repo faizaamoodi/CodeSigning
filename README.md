@@ -4,7 +4,8 @@ This project focuses on a study of code signing, which is a process that uses di
 > This project utilizes the wolfSSL cryptographic library to implement Elliptic Curve Function (ECC), random number generation, and SHA-256 hashing.
 
 ### Required definitions:
-`define HAVE_ECC`
+`#define HAVE_ECC`
+
 `#define WOLFSSL_SHA256`
 
 ### Execution
