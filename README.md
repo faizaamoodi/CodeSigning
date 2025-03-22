@@ -16,9 +16,25 @@ This project focuses on a study of code signing, which is a process that uses di
    gcc -o signor signor.c -lwolfssl
    gcc -o validator validator.c -lwolfssl
 ```
+        or [depending on installation]
+```sh
+   gcc -o keygenerator generator.c -I/usr/local/include -L/usr/local/lib -lwolfssl -lm
+   gcc -o product.bin product.c
+   gcc -o signor signor.c -I/usr/local/include -L/usr/local/lib -lwolfssl -lm
+   gcc -o validator validator.c -I/usr/local/include -L/usr/local/lib -lwolfssl -lm
+```
+    
 2. Run the executables:
 ```sh
     ./keygenerator
     ./signor
     ./validator
 ```
+
+3. \[optional\] Testing after modification
+```sh
+    echo "MALICIOUS CODE MALICIOUS CODE" >> product.bin
+    ./validator
+```
+
+
