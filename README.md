@@ -15,7 +15,6 @@ This project focuses on a study of code signing, which is a process that uses di
    gcc -o product.bin product.c
    gcc -o signor signor.c -lwolfssl
    gcc -o validator validator.c -lwolfssl
-```
 
         or [depending on installation]
 
