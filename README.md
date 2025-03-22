@@ -16,7 +16,9 @@ This project focuses on a study of code signing, which is a process that uses di
    gcc -o signor signor.c -lwolfssl
    gcc -o validator validator.c -lwolfssl
 ```
+
 **or \[depending on installation\]**
+
 
 ```sh
    gcc -o keygenerator generator.c -I/usr/local/include -L/usr/local/lib -lwolfssl -lm
@@ -32,7 +34,7 @@ This project focuses on a study of code signing, which is a process that uses di
     ./validator
 ```
 
-3. \[optional\] Testing after modification
+3. \[Optional\] Testing after modification
 ```sh
     echo "MALICIOUS CODE MALICIOUS CODE" >> product.bin
     ./validator
